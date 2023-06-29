@@ -1,0 +1,35 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        
+    <a class="navbar-brand" >myApp</a>
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div style="position: relative;" class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li routerLinkActive="active" routerLink="/home" class="nav-item active">
+                <a  class="nav-link" href="/home"><b>Home</b></a>
+            </li>
+            <li  routerLinkActive="active" routerLink="/acceuil" class="nav-item active">
+                <a  class="nav-link" href="/acceuil"><b>Home</b></a>
+            </li>
+            
+            <li routerLinkActive="active" class="nav-item active">
+                <a  class="nav-link" routerLink="/dashboard" href="/dashboard"><b>Dashboard</b></a>
+            </li>
+            <li  class="nav-item logout" style="position: absolute;right: 0;">
+    	 		
+    		</li>
+            
+            
+        </ul>
+        <span class="navbar-text">
+      {{request.user.username}} &nbsp;
+      <button (click)="Logout()"  class="btn btn-sm btn-warning">Logout</button>
+    </span>
+    </div>
+   
+</nav>
